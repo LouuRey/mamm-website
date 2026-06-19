@@ -202,10 +202,12 @@ export default function Home() {
                   }`}
                 >
                   {m.image ? (
-                    <img
+                    <Image
                       src={m.image}
                       alt="Uploaded"
-                      className="w-[224px] h-[224px] object-cover rounded-md"
+                      width={224}
+                      height={224}
+                      className="object-cover rounded-md"
                     />
                   ) : (
                     m.text
