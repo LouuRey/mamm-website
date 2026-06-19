@@ -4,7 +4,7 @@ import PublicMessage from '../../../../models/PublicMessage';
 import { isRateLimited } from '../../../lib/rateLimit';
 
 
-const MONGODB_URI = 'mongodb+srv://poxpox:andri@cluster0.7eryetz.mongodb.net/chatdb?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 let isConnected = false;
 async function connectDB() {

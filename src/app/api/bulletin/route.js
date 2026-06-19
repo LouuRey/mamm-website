@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import Bulletin from '../../../../models/Bulletin';
 
 
-const MONGODB_URI = 'mongodb+srv://poxpox:andri@cluster0.7eryetz.mongodb.net/chatdb?retryWrites=true&w=majority';// Ganti jika beda
+const MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
